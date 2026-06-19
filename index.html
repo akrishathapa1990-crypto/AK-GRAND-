@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AK Grand Palace | Luxury Hotel & Suites</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f9fb;
+color:#333;
+}
+
+header{
+background:#0B2545;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.logo{
+font-family:'Cinzel',serif;
+color:#D4AF37;
+font-size:30px;
+font-weight:700;
+letter-spacing:3px;
+line-height:1.1;
+}
+
+.logo span{
+display:block;
+color:white;
+font-size:10px;
+letter-spacing:4px;
+font-weight:300;
+margin-top:4px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.65);
+padding:60px;
+border-radius:20px;
+width:90%;
+max-width:1100px;
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:60px;
+margin-bottom:15px;
+font-family:'Cinzel',serif;
+}
+
+.overlay p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.search-box{
+background:white;
+padding:25px;
+border-radius:15px;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+}
+
+.search-box input,
+.search-box select{
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.search-box button{
+background:#D4AF37;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+}
+
+
+.section-title{
+text-align:center;
+font-size:42px;
+font-family:'Cinzel',serif;
+color:#0B2545;
+margin-bottom:50px;
+}
+
+
+.stats{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.stat h2{
+color:#0B2545;
+font-size:40px;
+margin-bottom:10px;
+}
+
+
+@media(max-width:900px){
+
+.search-box{
+grid-template-columns:1fr;
+}
+
+.overlay h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+AK GRAND PALACE
+<span>LUXURY HOTEL & SUITES</span>
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<h1>Luxury Beyond Expectations</h1>
+
+<p>
+Experience elegance, comfort and unforgettable hospitality at AK Grand Palace.
+</p>
+
+<div class="search-box">
+
+<input type="date">
+
+<input type="date">
+
+<select>
+<option>Guests</option>
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5+ Guests</option>
+
+<select>
+<option>Room Type</option>
+<option>Deluxe Room</option>
+<option>Executive Suite</option>
+<option>Presidential Suite</option>
+</select>
+
+<button>
+Search Rooms
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Luxury Rooms</p>
+</div>
+
+<div class="stat">
+<h2>50K+</h2>
+<p>Happy Guests</p>
+</div>
+
+<div class="stat">
+<h2>15+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2>99%</h2>
+<p>Customer Satisfaction</p>
+</div>
+
+</section>
+
+
+
+<section id="about" style="padding:90px 8%; background:white;">
+
+<h1 class="section-title">
+About AK Grand Palace
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+">
+
+<img
+src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80"
+style="
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+">
+
+<div>
+
+<h2 style="
+color:#0B2545;
+margin-bottom:20px;
+font-size:32px;
+">
+Luxury. Comfort. Excellence.
+</h2>
+
+<p style="line-height:1.9;">
+
+AK Grand Palace Hotel & Suites is a modern luxury hotel
+dedicated to providing world-class hospitality and memorable
+guest experiences.
+
+Whether you are visiting for business, vacation, honeymoon,
+anniversary or a special celebration, our premium services,
+elegant rooms and professional staff ensure a comfortable stay.
+
+</p>
+
+<br>
+
+<p style="line-height:1.9;">
+
+We offer luxurious accommodation, fine dining,
+24-hour room service, airport pickup, conference facilities,
+high-speed internet and personalized guest support.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section style="
+padding:90px 8%;
+background:#f8f9fb;
+">
+
+<h1 class="section-title">
+Why Choose Us
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+">
+
+<div class="stat">
+<h2>✓</h2>
+<h3>Luxury Rooms</h3>
+<p>Modern and elegant accommodation.</p>
+</div>
+
+<div class="stat">
+<h2>✓</h2>
+<h3>24/7 Support</h3>
+<p>Professional guest assistance anytime.</p>
+</div>
+
+<div class="stat">
+<h2>✓</h2>
+<h3>Secure Booking</h3>
+<p>Safe and reliable booking process.</p>
+</div>
+
+<div class="stat">
+<h2>✓</h2>
+<h3>Prime Location</h3>
+<p>Easy access to major attractions.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section style="
+padding:90px 8%;
+background:white;
+">
+
+<h1 class="section-title">
+Hotel Services
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+">
+
+<div class="stat">
+🍽
+<h3>Restaurant</h3>
+<p>Fine dining experience.</p>
+</div>
+
+<div class="stat">
+🏊
+<h3>Swimming Pool</h3>
+<p>Luxury relaxation area.</p>
+</div>
+
+<div class="stat">
+💪
+<h3>Fitness Center</h3>
+<p>Modern gym facilities.</p>
+</div>
+
+<div class="stat">
+🚗
+<h3>Airport Pickup</h3>
+<p>Convenient transportation.</p>
+</div>
+
+<div class="stat">
+🧺
+<h3>Laundry Service</h3>
+<p>Quick and professional service.</p>
+</div>
+
+<div class="stat">
+🅿
+<h3>Free Parking</h3>
+<p>Secure parking space.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section style="
+padding:90px 8%;
+background:#f8f9fb;
+">
+
+<h1 class="section-title">
+Guest Testimonials
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+">
+
+<div class="stat">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+<p>
+"The room was beautiful, clean and comfortable.
+Excellent service from the staff."
+</p>
+
+<br>
+
+<b>- Jesom Magar</b>
+
+</div>
+
+<div class="stat">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+<p>
+"One of the best hotel experiences I have had.
+Highly recommended."
+</p>
+
+<br>
+
+<b>- Shriya Bhandari</b>
+
+</div>
+
+<div class="stat">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+<p>
+"Luxury atmosphere, delicious food and
+great customer service."
+</p>
+
+<br>
+
+<b>- Aaswini Magar</b>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<style>
+
+@media(max-width:900px){
+
+#about div{
+grid-template-columns:1fr !important;
+}
+
+}
+
+</style>
+
+
+<section id="rooms" style="
+padding:90px 8%;
+background:white;
+">
+
+<h1 class="section-title">
+Luxury Rooms & Suites
+</h1>
+
+<div class="room-grid">
+
+<div class="room-card">
+
+<img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=80">
+
+<div class="room-content">
+
+<h3>Deluxe Room</h3>
+
+<p>
+Perfect for couples and solo travellers.
+</p>
+
+<p style="color:green;font-weight:bold;">
+🟢 Available (4 Rooms Left)
+</p>
+
+<h4>Rs. 12,000 / Night</h4>
+
+<button onclick="showRoomDetails('deluxe')">
+View Details
+</button>
+
+</div>
+
+</div>
+
+
+<div class="room-card">
+
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80">
+
+<div class="room-content">
+
+<h3>Executive Suite</h3>
+
+<p>
+Ideal for business and premium guests.
+</p>
+
+<p style="color:green;font-weight:bold;">
+🟢 Available (2 Rooms Left)
+</p>
+
+<h4>Rs. 18,000 / Night</h4>
+
+<button onclick="showRoomDetails('executive')">
+View Details
+</button>
+
+</div>
+
+</div>
+
+
+<div class="room-card">
+
+<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80">
+
+<div class="room-content">
+
+<h3>Presidential Suite</h3>
+
+<p>
+Ultimate luxury experience.
+</p>
+
+<p style="color:red;font-weight:bold;">
+🔴 Only 1 Suite Left
+</p>
+
+<h4>Rs. 30,000 / Night</h4>
+
+<button onclick="showRoomDetails('presidential')">
+View Details
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="roomDetails" style="
+display:none;
+padding:90px 8%;
+background:#f8f9fb;
+">
+
+<h1 class="section-title">
+Room Details
+</h1>
+
+<div class="detail-box">
+
+<img id="detailImage">
+
+<h2 id="detailTitle"></h2>
+
+<p id="detailDescription"></p>
+
+<br>
+
+<h3>Facilities</h3>
+
+<ul id="detailFacilities"></ul>
+
+<br>
+
+<h3 id="detailPrice"></h3>
+
+<br>
+
+<p id="detailRecommended"></p>
+
+<br>
+
+<button onclick="selectRoom()">
+Book This Room
+</button>
+
+<button onclick="closeRoomDetails()">
+Back
+</button>
+
+</div>
+
+</section>
+
+
+<section style="
+padding:90px 8%;
+background:white;
+overflow-x:auto;
+">
+
+<h1 class="section-title">
+Room Comparison
+</h1>
+
+<table class="comparison-table">
+
+<tr>
+<th>Features</th>
+<th>Deluxe</th>
+<th>Executive</th>
+<th>Presidential</th>
+</tr>
+
+<tr>
+<td>Air Conditioning</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Smart TV</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Mini Bar</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Work Desk</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Jacuzzi</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>VIP Service</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+
+</table>
+
+</section>
+
+
+
+<style>
+
+.room-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.room-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.room-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.room-content{
+padding:20px;
+}
+
+.room-content h4{
+color:#D4AF37;
+margin:15px 0;
+}
+
+.room-content button{
+background:#0B2545;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.detail-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.detail-box img{
+width:100%;
+max-height:450px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.detail-box ul{
+padding-left:20px;
+line-height:2;
+}
+
+.detail-box button{
+background:#0B2545;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+margin-right:10px;
+}
+
+.comparison-table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+.comparison-table th,
+.comparison-table td{
+border:1px solid #ddd;
+padding:15px;
+text-align:center;
+}
+
+.comparison-table th{
+background:#0B2545;
+color:white;
+}
+
+</style>
+
+
+
+<script>
+
+let selectedRoomName="";
+
+function showRoomDetails(room){
+
+document.getElementById("roomDetails").style.display="block";
+
+window.scrollTo({
+top:document.getElementById("roomDetails").offsetTop,
+behavior:"smooth"
+});
+
+selectedRoomName=room;
+
+if(room==="deluxe"){
+
+document.getElementById("detailImage").src=
+"https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=80";
+
+document.getElementById("detailTitle").innerHTML=
+"Deluxe Room";
+
+document.getElementById("detailDescription").innerHTML=
+"Elegant room designed for comfort and relaxation.";
+
+document.getElementById("detailFacilities").innerHTML=
+`
+<li>❄ Air Conditioning</li>
+<li>📶 Free WiFi</li>
+<li>📺 Smart TV</li>
+<li>☕ Complimentary Coffee</li>
+<li>🛏 King Size Bed</li>
+`;
+
+document.getElementById("detailPrice").innerHTML=
+"Rs. 12,000 / Night";
+
+document.getElementById("detailRecommended").innerHTML=
+"❤️ Recommended for Couples & Solo Travellers";
+
+}
+
+else if(room==="executive"){
+
+document.getElementById("detailImage").src=
+"https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80";
+
+document.getElementById("detailTitle").innerHTML=
+"Executive Suite";
+
+document.getElementById("detailDescription").innerHTML=
+"Premium suite designed for professionals and business travellers.";
+
+document.getElementById("detailFacilities").innerHTML=
+`
+<li>💼 Work Desk</li>
+<li>📶 High Speed WiFi</li>
+<li>📺 Smart TV</li>
+<li>☕ Coffee Machine</li>
+<li>🛋 Lounge Area</li>
+`;
+
+document.getElementById("detailPrice").innerHTML=
+"Rs. 18,000 / Night";
+
+document.getElementById("detailRecommended").innerHTML=
+"👨‍💼 Recommended for Business Travellers";
+
+}
+
+else{
+
+document.getElementById("detailImage").src=
+"https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80";
+
+document.getElementById("detailTitle").innerHTML=
+"Presidential Suite";
+
+document.getElementById("detailDescription").innerHTML=
+"Exclusive luxury suite offering the highest level of comfort.";
+
+document.getElementById("detailFacilities").innerHTML=
+`
+<li>🛁 Jacuzzi</li>
+<li>🍽 Private Dining</li>
+<li>📶 Premium WiFi</li>
+<li>📺 Large Smart TV</li>
+<li>👑 VIP Service</li>
+`;
+
+document.getElementById("detailPrice").innerHTML=
+"Rs. 30,000 / Night";
+
+document.getElementById("detailRecommended").innerHTML=
+"🌟 Recommended for VIP Guests & Honeymoon Couples";
+
+}
+
+}
+
+function closeRoomDetails(){
+document.getElementById("roomDetails").style.display="none";
+}
+
+function selectRoom(){
+
+alert(
+selectedRoomName.toUpperCase() +
+" selected successfully. Continue to booking section."
+);
+
+}
+
+</script>
+
+
+<section id="booking" style="
+padding:90px 8%;
+background:#f8f9fb;
+">
+
+<h1 class="section-title">
+Book Your Stay
+</h1>
+
+<div style="
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+">
+
+<div style="
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+">
+
+<form id="bookingForm">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="name"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Age</label>
+
+<input
+type="number"
+id="age"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Country</label>
+
+<select
+id="country"
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border-radius:8px;
+">
+
+<option>Nepal</option>
+<option>India</option>
+<option>USA</option>
+<option>UK</option>
+<option>Australia</option>
+
+</select>
+
+<label>Phone Number</label>
+
+<input
+type="text"
+id="phone"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Check-In Date</label>
+
+<input
+type="date"
+id="checkin"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Check-Out Date</label>
+
+<input
+type="date"
+id="checkout"
+required
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Adults</label>
+
+<input
+type="number"
+id="adults"
+min="1"
+value="1"
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Children</label>
+
+<input
+type="number"
+id="children"
+min="0"
+value="0"
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+">
+
+<label>Room Type</label>
+
+<select
+id="room"
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border-radius:8px;
+">
+
+<option value="12000">Deluxe Room</option>
+<option value="18000">Executive Suite</option>
+<option value="30000">Presidential Suite</option>
+
+</select>
+
+<label>Purpose of Stay</label>
+
+<select
+id="occasion"
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border-radius:8px;
+">
+
+<option>Regular Stay</option>
+<option>Business Trip</option>
+<option>Birthday</option>
+<option>Anniversary</option>
+<option>Honeymoon</option>
+<option>Graduation</option>
+<option>Family Vacation</option>
+
+</select>
+
+<div
+id="rewardSection"
+style="
+display:none;
+background:#fff8dc;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+text-align:center;
+">
+
+<h3>🎁 Special Occasion Reward</h3>
+
+<button
+type="button"
+id="rewardBtn"
+style="
+margin-top:10px;
+padding:10px 20px;
+background:#D4AF37;
+border:none;
+border-radius:8px;
+cursor:pointer;
+">
+Reveal Reward
+</button>
+
+<p id="rewardText" style="margin-top:15px;"></p>
+
+</div>
+
+<label>Special Requests</label>
+
+<textarea
+id="requests"
+rows="4"
+placeholder="Airport pickup, birthday decoration, extra bed..."
+style="
+width:100%;
+padding:12px;
+margin:10px 0 20px;
+border:1px solid #ddd;
+border-radius:8px;
+"></textarea>
+
+<div style="margin-bottom:15px;">
+<input type="checkbox" id="pickup">
+<label for="pickup"> Airport Pickup Required</label>
+</div>
+
+<div style="margin-bottom:20px;">
+<input type="checkbox" id="extrabed">
+<label for="extrabed"> Extra Bed Required</label>
+</div>
+
+<button
+type="submit"
+style="
+width:100%;
+padding:15px;
+background:#D4AF37;
+border:none;
+border-radius:8px;
+font-weight:bold;
+cursor:pointer;
+font-size:16px;
+">
+Confirm Booking
+</button>
+
+</form>
+
+</div>
+
+<div style="
+background:#0B2545;
+color:white;
+padding:25px;
+border-radius:15px;
+height:fit-content;
+position:sticky;
+top:100px;
+">
+
+<h2>Booking Summary</h2>
+
+<hr style="margin:15px 0;">
+
+<p><b>Room Price:</b></p>
+<p id="roomPrice">Rs. 12,000</p>
+
+<br>
+
+<p><b>Total Nights:</b></p>
+<p id="nights">1</p>
+
+<br>
+
+<p><b>Special Reward:</b></p>
+<p id="rewardSummary">None</p>
+
+<br>
+
+<h2 style="color:#D4AF37;">
+<span id="totalPrice">
+Rs. 12,000
+</span>
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+let reward = "None";
+
+document.getElementById("occasion")
+.addEventListener("change",function(){
+
+let value=this.value;
+
+if(
+value==="Birthday" ||
+value==="Anniversary" ||
+value==="Honeymoon" ||
+value==="Graduation"
+){
+document.getElementById("rewardSection")
+.style.display="block";
+}
+else{
+document.getElementById("rewardSection")
+.style.display="none";
+reward="None";
+document.getElementById("rewardText").innerHTML="";
+document.getElementById("rewardSummary").innerHTML="None";
+}
+
+});
+
+document.getElementById("rewardBtn")
+.addEventListener("click",function(){
+
+let rewards=[
+"🎂 Complimentary Cake",
+"🍽 Free Dinner",
+"☕ Free Breakfast",
+"🏨 Room Upgrade",
+"🎁 Welcome Gift"
+];
+
+reward=
+rewards[Math.floor(Math.random()*rewards.length)];
+
+document.getElementById("rewardText")
+.innerHTML=reward;
+
+document.getElementById("rewardSummary")
+.innerHTML=reward;
+
+});
+
+function calculateTotal(){
+
+let roomPrice=
+parseInt(document.getElementById("room").value);
+
+let checkin=
+new Date(document.getElementById("checkin").value);
+
+let checkout=
+new Date(document.getElementById("checkout").value);
+
+let days=1;
+
+if(
+document.getElementById("checkin").value &&
+document.getElementById("checkout").value
+){
+
+days=
+Math.ceil(
+(checkout-checkin)/(1000*60*60*24)
+);
+
+if(days<1){
+days=1;
+}
+
+}
+
+let total=
+roomPrice*days;
+
+document.getElementById("roomPrice")
+.innerHTML="Rs. "+roomPrice.toLocaleString();
+
+document.getElementById("nights")
+.innerHTML=days;
+
+document.getElementById("totalPrice")
+.innerHTML=
+"Rs. "+total.toLocaleString();
+
+}
+
+document.getElementById("room")
+.addEventListener("change",calculateTotal);
+
+document.getElementById("checkin")
+.addEventListener("change",calculateTotal);
+
+document.getElementById("checkout")
+.addEventListener("change",calculateTotal);
+
+document.getElementById("bookingForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let name=
+document.getElementById("name").value;
+
+let age=
+document.getElementById("age").value;
+
+let phone=
+document.getElementById("phone").value;
+
+if(!/^[A-Za-z ]+$/.test(name)){
+alert("Name should contain letters only.");
+return;
+}
+
+if(age<18){
+alert("Guest must be at least 18 years old.");
+return;
+}
+
+if(phone.length<10){
+alert("Please enter a valid phone number.");
+return;
+}
+
+alert("Booking information verified successfully!");
+
+});
+
+</script>
+
+<div id="receiptPopup"
+style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+z-index:9999;
+">
+
+<div style="
+background:white;
+width:90%;
+max-width:700px;
+padding:30px;
+border-radius:15px;
+max-height:90vh;
+overflow:auto;
+">
+
+<h1 style="
+color:#0B2545;
+text-align:center;
+font-family:Cinzel,serif;
+">
+AK GRAND PALACE
+</h1>
+
+<p style="
+text-align:center;
+margin-bottom:20px;
+">
+Luxury Hotel & Suites
+</p>
+
+<hr>
+
+<h2 style="margin-top:20px;">
+Booking Receipt
+</h2>
+
+<br>
+
+<p><b>Booking ID:</b> <span id="receiptBookingID"></span></p>
+
+<p><b>Guest Name:</b> <span id="receiptName"></span></p>
+
+<p><b>Email:</b> <span id="receiptEmail"></span></p>
+
+<p><b>Phone:</b> <span id="receiptPhone"></span></p>
+
+<p><b>Room Type:</b> <span id="receiptRoom"></span></p>
+
+<p><b>Check-In:</b> <span id="receiptCheckin"></span></p>
+
+<p><b>Check-Out:</b> <span id="receiptCheckout"></span></p>
+
+<p><b>Adults:</b> <span id="receiptAdults"></span></p>
+
+<p><b>Children:</b> <span id="receiptChildren"></span></p>
+
+<p><b>Purpose:</b> <span id="receiptPurpose"></span></p>
+
+<p><b>Reward:</b> <span id="receiptReward"></span></p>
+
+<p><b>Total Amount:</b> <span id="receiptAmount"></span></p>
+
+<p><b>Status:</b> ✅ Confirmed</p>
+
+<br>
+
+<button
+id="downloadPDF"
+style="
+background:#D4AF37;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+">
+Download PDF
+</button>
+
+<button
+onclick="closeReceipt()"
+style="
+background:#0B2545;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-left:10px;
+">
+Close
+</button>
+
+</div>
+
+</div>
+
+
+<button id="helpBtn"
+style="
+position:fixed;
+bottom:25px;
+right:25px;
+background:#D4AF37;
+border:none;
+padding:15px 20px;
+border-radius:50px;
+cursor:pointer;
+font-weight:bold;
+z-index:999;
+">
+Need Help?
+</button>
+
+
+
+<div id="helpPanel"
+style="
+display:none;
+position:fixed;
+right:20px;
+bottom:90px;
+width:320px;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+z-index:999;
+">
+
+<h3>Guest Assistance</h3>
+
+<br>
+
+<p>📞 +977 98XXXXXXXX</p>
+
+<p>📧 support@akgrandpalace.com</p>
+
+<p>🕒 Available 24/7</p>
+
+<br>
+
+<p>
+Need help with booking,
+room selection or special requests?
+Our support team is ready to help.
+</p>
+
+</div>
+
+<section id="contact"
+style="
+padding:90px 8%;
+background:white;
+">
+
+<h1 class="section-title">
+Contact Us
+</h1>
+
+<div class="room-grid">
+
+<div class="stat">
+<h2>📍</h2>
+<h3>Location</h3>
+<p>Kathmandu, Nepal</p>
+</div>
+
+<div class="stat">
+<h2>📞</h2>
+<h3>Phone</h3>
+<p>+977 98XXXXXXXX</p>
+</div>
+
+<div class="stat">
+<h2>📧</h2>
+<h3>Email</h3>
+<p>support@akgrandpalace.com</p>
+</div>
+
+</div>
+
+</section>
+
+<footer
+style="
+background:#0B2545;
+color:white;
+padding:40px;
+text-align:center;
+">
+
+<h2 style="
+font-family:Cinzel,serif;
+color:#D4AF37;
+">
+AK GRAND PALACE
+</h2>
+
+<p>
+Luxury Hotel & Suites
+</p>
+
+<br>
+
+<p>
+© 2026 AK Grand Palace.
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+<script>
+
+document.getElementById("helpBtn")
+.addEventListener("click",function(){
+
+let panel=
+document.getElementById("helpPanel");
+
+if(panel.style.display==="block"){
+panel.style.display="none";
+}
+else{
+panel.style.display="block";
+}
+
+});
+
+
+let bookingCounter=1000;
+
+document.getElementById("bookingForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let bookingID=
+"AKGP"+bookingCounter++;
+
+document.getElementById("receiptBookingID")
+.innerHTML=bookingID;
+
+document.getElementById("receiptName")
+.innerHTML=document.getElementById("name").value;
+
+document.getElementById("receiptEmail")
+.innerHTML=document.getElementById("email").value;
+
+document.getElementById("receiptPhone")
+.innerHTML=document.getElementById("phone").value;
+
+document.getElementById("receiptRoom")
+.innerHTML=
+document.getElementById("room")
+.options[
+document.getElementById("room").selectedIndex
+].text;
+
+document.getElementById("receiptCheckin")
+.innerHTML=
+document.getElementById("checkin").value;
+
+document.getElementById("receiptCheckout")
+.innerHTML=
+document.getElementById("checkout").value;
+
+document.getElementById("receiptAdults")
+.innerHTML=
+document.getElementById("adults").value;
+
+document.getElementById("receiptChildren")
+.innerHTML=
+document.getElementById("children").value;
+
+document.getElementById("receiptPurpose")
+.innerHTML=
+document.getElementById("occasion").value;
+
+document.getElementById("receiptReward")
+.innerHTML=
+reward;
+
+document.getElementById("receiptAmount")
+.innerHTML=
+document.getElementById("totalPrice").innerText;
+
+document.getElementById("receiptPopup")
+.style.display="flex";
+
+});
+
+
+function closeReceipt(){
+
+document.getElementById("receiptPopup")
+.style.display="none";
+
+}
+
+
+document.getElementById("downloadPDF")
+.addEventListener("click",function(){
+
+const { jsPDF } = window.jspdf;
+
+const pdf = new jsPDF();
+
+pdf.setFontSize(22);
+pdf.text("AK GRAND PALACE",20,20);
+
+pdf.setFontSize(12);
+
+pdf.text(
+"Luxury Hotel & Suites",
+20,
+30
+);
+
+pdf.text(
+"Booking ID: " +
+document.getElementById("receiptBookingID").innerText,
+20,
+50
+);
+
+pdf.text(
+"Guest Name: " +
+document.getElementById("receiptName").innerText,
+20,
+60
+);
+
+pdf.text(
+"Room Type: " +
+document.getElementById("receiptRoom").innerText,
+20,
+70
+);
+
+pdf.text(
+"Check-In: " +
+document.getElementById("receiptCheckin").innerText,
+20,
+80
+);
+
+pdf.text(
+"Check-Out: " +
+document.getElementById("receiptCheckout").innerText,
+20,
+90
+);
+
+pdf.text(
+"Purpose: " +
+document.getElementById("receiptPurpose").innerText,
+20,
+100
+);
+
+pdf.text(
+"Reward: " +
+document.getElementById("receiptReward").innerText,
+20,
+110
+);
+
+pdf.text(
+"Total Amount: " +
+document.getElementById("receiptAmount").innerText,
+20,
+120
+);
+
+pdf.text(
+"Status: Confirmed",
+20,
+130
+);
+
+pdf.text(
+"Thank You For Choosing AK Grand Palace",
+20,
+150
+);
+
+pdf.save(
+document.getElementById("receiptBookingID").innerText +
+".pdf"
+);
+
+});
+
+</script>
+
+</body>
+</html>
